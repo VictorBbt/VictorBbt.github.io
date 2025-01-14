@@ -391,54 +391,39 @@ ninja.data = [{
           section: "News",},{id: "news-starting-a-research-internship-at-mit-cocosci-working-on-cultural-evolution-of-drawing-skills-️-powered-by-multimodal-language-models-under-the-supervision-of-cédric-colas-joshua-tenenbaum-and-jacob-andreas",
           title: 'Starting a research internship at MIT CoCoSci working on cultural evolution of drawing...',
           description: "",
-          section: "News",},{id: "news-i-am-thrilled-to-annouce-that-i-joined-google-deepmind-as-a-co-advised-phd-student-to-advance-ai-towards-human-intelligence-my-work-lies-at-the-intersection-of-foundation-models-multimodal-ai-video-understanding-and-planning-i-am-lucky-to-be-supervised-by-ahmet-iscen-mathilde-caron-and-cordelia-schmid-at-google-and-by-gül-varol-on-the-academic-side-in-the-imagine-group-at-ecole-des-ponts",
-          title: 'I am thrilled to annouce that I joined Google Deepmind as a co-advised...',
+          section: "News",},{id: "news-i-am-thrilled-to-annouce-that-i-joined-google-deepmind-as-a-co-advised-phd-student-with-ecole-des-ponts",
+          title: 'I am thrilled to annouce that I joined Google DeepMind as a co-advised...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-sketch-to-reality",
+          title: 'Sketch to Reality',
+          description: "This project investigates several LLM fine-tuning methods to assess the understanding and creation of art",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-dcase-challenge-audio-classification",
+          title: 'DCase challenge - audio classification',
+          description: "This is a project exploring how to address Audio Recordings Classification with CNNs or Foundation Models",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-convolutional-wasserstein-distances",
+          title: 'Convolutional Wasserstein Distances',
+          description: "We investigate and implement some features of an article of Convolutional Wasserstein Distances",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-help-mates-a-genetic-algorithm",
+          title: 'Help Mates! A genetic algorithm',
+          description: "Custom Unity tools to build a 3D world where creatures learn to survive with a Neural-Network based Genetic Algorithm",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-conditional-vae-39-s",
+          title: 'Conditional VAE&amp;#39;s',
+          description: "Probabilistic Graph Models",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-rlrider",
+          title: 'RLRider',
+          description: "A Reinforcement Learning project on a replica of Ketchapp&#39;s game Rider",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
