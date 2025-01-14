@@ -1,81 +1,91 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: DCase challenge - audio classification
+description: This is a project exploring how to address Audio Recordings Classification with CNNs or Foundation Models
+img: assets/img/logmel_spectro.png
 importance: 2
-category: work
+category: Class Projects
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# DeepLearning_Project_AcousticClassificationDCase
+Repository of course project based on DCase 2021 Challenge
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Authors: Barberteguy Victor
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Based on the [following repository](https://github.com/dataflowr/Project-Acoustic-Scene-Classification-DCASE.git) 
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+This is a project done during the Deep Learning class by Prof. Umut Simsekli. It explores Deep Learning methods for audio scene classification, with CNN-based architectures (Resnet, CNN6) and several tricks implemented [here](https://arxiv.org/abs/2105.13734) (the github page is below). I also investigate the AudioCLIP mulitmodal founddation model for such audio classification task.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+In this repository, you will find all you need to download and run the project **except the dataset**, that you will have to download in *./data/audio/class_name/\*.wav* (the csv created for training is left to see how it looks like). The *TAU-urban-acoustic-scenes-2020-mobile-development* is also left (no need to download it).
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+There are several notebooks:
+- *CNNs.ipynb* where we train the CNN models
+- *CLIP.ipynb$ where we classify our audio recordings thanks to CLIP, and visualize the latent space
+- *ConvolutionDifferences.ipynb* where we investigate the differences between classical and separable convolution. You can also visualize what a Log Mel Spectrogram looks like (the data needed is in *./data/custom).
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+-----------------
+## Separable convolutions and test-time augmentations for low-complexity and calibrated acoustic scene classification (DCASE21 Challenge)
+
+[**SEPARABLE CONVOLUTIONS AND TEST-TIME AUGMENTATIONS FOR LOW-COMPLEXITY AND CALIBRATED ACOUSTIC SCENE CLASSIFICATION**]() 
+
+[*Gilles Puy*](https://sites.google.com/site/puygilles/home),
+[*Himalaya Jain*](https://himalayajain.github.io/),
+[*Andrei Bursuc*](https://abursuc.github.io/)  
+*valeo.ai, Paris, France*
+
+This repo contains the code to reproduce the results of the systems we submitted to the Task1a of the DCASE21 challenge. 
+Please refer to [link1](http://dcase.community/challenge2021/task-acoustic-scene-classification#subtask-a) and 
+[link2](https://arxiv.org/abs/2105.13734) for more information about the challenge.
+
+
+If you find this code useful, please cite our [technical report]():
+```
+@techreport{vai21dcase,
+  title={Separable convolutions and test-time augmentations for low-complexity and calibrated acoustic scene classification},
+  author={Puy, Gilles and Jain, Himalaya and Bursuc, Andrei},
+  institution={{DCASE2021 Challenge}},
+  year={2021},
+}
+```
+-----------------
+
+
+
+## Installation
+ 
+### DCASE21 Datasets
+If not already done, please download the development and evaluation datasets from
+[here](http://dcase.community/challenge2021/task-acoustic-scene-classification#download). 
+
+We use a smaller size of the dataset in order to spare compuation time and power: we kept only 1000 audio samples for each class. The dataset is available [here](https://filesender.renater.fr/?s=download&token=7da7d036-7eb4-4323-8ea1-905aa581fa89)
+
+
+### code
+
+ * clone this repository
+
+```
+git clone https://github.com/JaybeeH32/MAP583_Project_AcousticClassificationDCase.git
 ```
 
-{% endraw %}
+ * copy database  in folder /data 
+
+
+### Requirements 
+* Python == 3.7
+* CUDA >= 10.2
+```bash
+$ pip install torch===1.7.1 torchvision===0.8.2 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+$ pip install tqdm scikit-learn tensorboard pandas pyaml torchlibrosa
+$ apt install -y libsndfile1
+```
+
+
+you can use a conda environment:
+
+```
+
+```

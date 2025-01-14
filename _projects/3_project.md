@@ -1,81 +1,45 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: Convolutional Wasserstein Distances
+description: We investigate and implement some features of an article of Convolutional Wasserstein Distances
+img: assets/img/diffuse3D.png
 importance: 3
-category: work
+category: Class Projects
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Convolutional Wassertein Distances
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This is the repository containing the work done for the final project of the *Geometric Data Analysis* course given by Prof. Feydy at the MVA Master (ENS Paris-Saclay).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Graph_Inter.png" title="graph inter" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/barycenter_images.png" title="barycenters" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/diffuse3D.png" title="diffuse3D" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Abstract of the project 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+We analyze and run additional experiments to the article of Solomon et al. *Wasserstein Distances: Efficient Optimal Transportation on Geometric Domains*, that proposes a computationally efficient method based on Wasserstein distances and diffusion to tackle tasks on 3D meshes or images. In addition to try the method on connected graphs, we quantify the error brought by approximating the true kernel with the heat kernel and highlight the effect of several parameters such as the diffusion time and the regularization value. This led us to eventually identify issues to be addressed in future work to improve on the results obtained by Solomon et al.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Practical Information
 
-{% raw %}
+The repository contains the following material:
+- The final report
+- an explanatory video recorded by the original authors of the article
+- Useful references for the project
+- Images of different formats in the *data* folder
+- *Code* folder that contains all the utils for thz projects, as well as jupyter notebooks to reproduce the experiments that we done during the project
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+To run it, download the *Code* and the *data* folder in the same directory, and make sure to install the required libraries (almost all are classical (scipy, matplotlib), except visualization libraries for graphs `networkX` and 3D meshes `meshplot`).
 
-{% endraw %}
+### Authors
+
+[Hippolyte Pilchen](https://github.com/HipPilchen) - ENS Paris Saclay and [Victor Barberteguy](https://github.com/VictorBbt) - Institut Polytechnique de Paris
+
+Feel free to reach us if you have any questions! (mail addresses are indicated in the report)
