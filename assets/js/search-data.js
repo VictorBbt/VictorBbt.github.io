@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-",
-    title: "",
+    id: "nav-about",
+    title: "about",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -382,19 +382,7 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-starting-a-research-internship-at-cnrs-aist-joint-robotics-laboratory-working-on-multisensory-task-learning-under-the-supervision-of-prof-fumio-kanehiro-can-t-wait-to-explore-japan",
-          title: 'Starting a research internship at CNRS-AIST Joint Robotics Laboratory working on multisensory task...',
-          description: "",
-          section: "News",},{id: "news-travelling-to-ha-long-to-present-our-paper-as-an-oral-presentation-at-sii-2024-conference",
-          title: 'Travelling to Ha Long 🇻🇳 to present our paper as an oral presentation...',
-          description: "",
-          section: "News",},{id: "news-starting-a-research-internship-at-mit-cocosci-working-on-cultural-evolution-of-drawing-skills-️-powered-by-multimodal-language-models-under-the-supervision-of-cédric-colas-joshua-tenenbaum-and-jacob-andreas",
-          title: 'Starting a research internship at MIT CoCoSci working on cultural evolution of drawing...',
-          description: "",
-          section: "News",},{id: "news-i-am-thrilled-to-annouce-that-i-joined-google-deepmind-as-a-co-advised-phd-student-to-advance-ai-towards-human-intelligence-my-work-lies-at-the-intersection-of-foundation-models-multimodal-ai-video-understanding-and-planning-i-am-lucky-to-be-supervised-by-ahmet-iscen-mathilde-caron-and-cordelia-schmid-at-google-and-by-gül-varol-on-the-academic-side-in-the-imagine-group-at-ecole-des-ponts",
-          title: 'I am thrilled to annouce that I joined Google Deepmind as a co-advised...',
-          description: "",
-          section: "News",},{id: "projects-project-1",
+    },{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
@@ -447,11 +435,11 @@ ninja.data = [{
           window.open("mailto:%66%6F%72%65%6E%61%6D%65.%6C%61%73%74%6E%61%6D%65%34@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/{"linkedin_username"=>"victor-barberteguy-938951229"}", "_blank");
+          window.open("https://www.linkedin.com/in/victor-barberteguy-938951229", "_blank");
         },
       },{
         id: 'social-rss',
