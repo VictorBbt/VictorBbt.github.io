@@ -4,7 +4,7 @@ title: Help Mates! A genetic algorithm
 description: Custom Unity tools to build a 3D world where creatures learn to survive with a Neural-Network based Genetic Algorithm
 img: assets/img/FinalRenderingGif.gif
 importance: 4
-category: Class Projects
+category: Course Projects
 ---
 
 # Help-Mates! Is flocking or herding a survival behaviour ?

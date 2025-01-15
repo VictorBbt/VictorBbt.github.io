@@ -4,7 +4,7 @@ title: Conditional VAE's
 description: Probabilistic Graph Models
 img: assets/img/ccvae-800.webp
 importance: 5
-category: Class Projects
+category: Course Projects
 ---
 
 # Capturing label characteristics in VAEs

@@ -4,7 +4,7 @@ title: Convolutional Wasserstein Distances
 description: We investigate and implement some features of an article of Convolutional Wasserstein Distances
 img: assets/img/diffuse3D.png
 importance: 3
-category: Class Projects
+category: Course Projects
 ---
 
 # Convolutional Wassertein Distances

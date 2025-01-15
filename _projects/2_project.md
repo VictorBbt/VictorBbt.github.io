@@ -4,7 +4,7 @@ title: DCase challenge - audio classification
 description: This is a project exploring how to address Audio Recordings Classification with CNNs or Foundation Models
 img: assets/img/logmel_spectro.png
 importance: 2
-category: Class Projects
+category: Course Projects
 giscus_comments: true
 ---
 

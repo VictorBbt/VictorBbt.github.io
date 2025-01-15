@@ -4,7 +4,7 @@ title: Sketch to Reality
 description: This project investigates several LLM fine-tuning methods to assess the understanding and creation of art
 img: assets/img/llava3prompts.png
 importance: 1
-category: Class Projects
+category: Course Projects
 ---
 
 # SketchToReality: Enhancing AI's Understanding and Creation of art

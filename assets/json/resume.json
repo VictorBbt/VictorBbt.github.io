@@ -19,9 +19,9 @@
       "name": "MIT Computational Cognitive Science Lab",
       "location": "Cambridge, MA, USA",
       "url": "https://cocosci.mit.edu",
-      "highlights": ["Multimodal Agents, Cultural Evolution"],
+      "highlights": ["Multimodal Agents, Cultural Evolution", "Supervised by Cédric Colas"],
       "position": "Visiting Graduate Researcher",
-      "summary":["Investigating cultural evolution theories to enhance artificial agents' drawing capabilities", "Supervised by Cédric Colas"],
+      "summary":["Investigating cultural evolution theories to enhance artificial agents' drawing capabilities"],
       "startDate": "2024-05-01",
       "endDate": "2024-10-31"
     },
@@ -29,9 +29,9 @@
       "name": "CNRS-AIST Joint Robotics Laboratory",
       "location": "Tsukuba, Ibaraki, Japan",
       "url": "https://unit.aist.go.jp/jrl-22022/en/",
-      "highlights": ["Robotics, Machine Learning"],
+      "highlights": ["Robotics, Machine Learning", "Supervised by Fumio Kanehiro"],
       "position": "Research Assistant",
-      "summary":["Designing an automatic, multisensory segmentation method to learn and generalize manipulation tasks for humanoid robots", "Supervised by Fumio Kanehiro"],
+      "summary":["Designing an automatic, multisensory segmentation method to learn and generalize manipulation tasks for humanoid robots"],
       "startDate": "2023-03-27",
       "endDate": "2023-08-05"
     },

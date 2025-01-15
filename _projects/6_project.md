@@ -4,7 +4,7 @@ title: RLRider
 description: A Reinforcement Learning project on a replica of Ketchapp's game Rider
 img: assets/img/LVL1.gif
 importance: 6
-category: Class Projects
+category: Course Projects
 ---
 
 # RIDER LEARNING
