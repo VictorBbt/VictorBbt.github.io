@@ -3,6 +3,8 @@ layout: about
 title: about
 permalink: /
 subtitle: 1st year PhD student in Multimodal AI.
+tagline: About | Victor Barberteguy's personal page
+description: personal web page containing publications, projects, ... about multimodal AI
 footnote:
 profile:
   align: right
