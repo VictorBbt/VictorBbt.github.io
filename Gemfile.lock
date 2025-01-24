@@ -276,6 +276,7 @@ DEPENDENCIES
   jekyll-terser!
   jekyll-toc
   jekyll-twitter-plugin
+  jekyll-seo-tag
   jemoji
   observer
   ostruct
